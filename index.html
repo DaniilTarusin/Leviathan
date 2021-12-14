@@ -4,8 +4,6 @@
 
 <title>Daniil Tarusin</title>
 <style type="text/css">
-a
-{color: #FFFFFF;}
 
 html
 {
@@ -41,10 +39,10 @@ width: 100%;
 min-width: 460px;
 max-width: 960px;
 margin: 0 auto 30px;
-padding: 30px 0 10px;
+padding: 30px 0 0px;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: space-between; /* Равномерно распределяет все элементы по ширине flex-блока.Первый элемент вначале, последний в конце */
 box-sizing: border-box;
 }
 
@@ -55,7 +53,6 @@ color: #fff;
 text-decoration: none;
 margin: 5px 0 0 5px;
 justify-content: center;
-align-items: center;
 display: flex;
 flex: none;
 align-items: center;
@@ -75,7 +72,7 @@ box-sizing: border-box;
 
 .box{
 font-size: 1.25rem;
-line-height: 1.5;
+line-height: 0.75;
 margin: 0 0 40px -50px;
 display: flex;
 flex-wrap: wrap;
@@ -93,7 +90,6 @@ font: none;
 }
 
 .content{
-margin-bottom: 30px;
 display: flex;
 flex-wrap: wrap;
 }
@@ -102,7 +98,7 @@ flex-wrap: wrap;
 flex: 1 1 200px;
 }
 .banner{
-background: #FFDB89;
+background: #6495ed;
 width: 100%;
 min-width: 100px;
 min-height: 200px;
@@ -128,46 +124,36 @@ display: flex;
 padding-right: 20px;
 flex: none;
 }
-.comment-base{
-flex: auto;
-}
-.comment-avatar{
-background: #FFA985;
+
+.comment-avatar
+{
+background: #50c878;
 width: 50px;
 height: 50px;
 }
 
-@media screen and  (max-width: 800px) {
-.banners{
-margin-left: -30px;
+@media screen and  (max-width: 800px) 
+{
+
+.banners
+{
+margin-left: -20px;
 display: flex;
 flex-basis: 100%;
 }
 
-.banner{
-margin-left: 30px;
-}
-.posts{
-margin-left: 0;
-}
-}
-@media screen and  (max-width: 600px) {
-.content{
-display: block;
+.banner
+{margin-left: 30px;}
+.posts
+{margin-left: 0;}
 }
 
-.banners{
-margin: 0;
-display: block;
-}
-
-.banner{
-margin-left: 0;
-}
-
-.posts{
-margin: 0;
-}
+@media screen and  (max-width: 600px) 
+{
+.content
+{display: block;}
+.banners
+{display: block;}
 }
 </style>
 </head>
